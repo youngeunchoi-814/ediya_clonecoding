@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/* 폰트 불러오기 */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css); 
+/* 폰트 Weight ExL 100, L 300, R 400, M 500, B 700, H 900 */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900');
+/* 폰트 Weight ExL 200, L 300, R 400, SeB 600, B 700, ExB 800, BK 900 */
+
+
+li{list-style: none;}
+/*밑줄 지우기*/
+a{color:#000; text-decoration: none;}
+*{margin: 0; padding: 0;}
+
+header {
+    position: absolute;
+    width: 100%;
+    min-width: 320px;
+    height: 90px;
+    background: #FFF;
+    z-index: 52;
+}
+.site {
+    display: flex;
+    font-size: 12px;
+    margin-left: 80px;
+
+}
+.site li.on a {
+    color: #1d326c;
+}
+.site li{
+    margin-right:17px;
+    padding-right: 20px;
+    background: url(../images/common/util_line.gif) no-repeat right;
+} 
+.site li a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color:#848484;
+}
+.site li:last-child {
+    background: none;
+}
+#btn {
+    display: none;
+}
+
+nav .util .members li{
+    text-align: right;
+    font-size: 12px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-left: 17px;
+    padding-right: 18px;
+    background: url(../images/common/util_line.gif) no-repeat right;
+}
+nav .util .members li:last-child{
+    background: none;
+}
+.sns li {
+    display: flex;
+}
+.sns li:nth-child(1) a {
+    background: url(../images/common/top_sns01.gif)no-repeat;
+
+}
+.sns li:nth-child(2) a {
+    background: url(../images/common/top_sns02.gif)no-repeat;
+
+}
+.sns li:nth-child(3) a {
+    background: url(../images/common/top_sns03.gif)no-repeat;
+
+}
+.gnb {
+    font-size: 0px;
+}
+.gnb >li{
+    display: inline-block;
+    width: 100;
+    vertical-align: top;
+    text-align: center;
+    font-size: 16px;
+}
+.gnb li>a{
+    display: block;
+}
+.gnb li:hover>.sub{
+    display: block;
+}
+
+.gnb .sub{
+    display: none;
+}
+footer{
+    background: #262626;
+    text-align: center;
+ }
+ footer .util{
+    padding: 17px 0;
+    border-bottom:1px solid #464646;
+ }
+ footer .util li{
+    display: inline-block;
+    margin: 3px 20px;
+ }
+ footer .util li a{
+    color:#818181;
+ }
+ footer .util li a em{
+    color:#fff;
+ }
+ footer .container{
+    position: relative;
+    padding: 40px 0;
+ }
+ footer .container .ccm{
+    position: absolute;
+    right: 10px;
+    top:30px;
+ }
+ footer .container .ccm img{
+    width: 170px;
+    vertical-align: middle;
+ }
+ footer address{
+    width: 90%;
+    max-width: 650px;
+    margin: 24px auto 14px;
+    color:#6c6c6c;
+    font-size: 12px;
+    font-style: normal;
+ }
+ footer address span{
+    display: inline-block;
+    margin-right:10px;
+    padding-right: 10px;
+    background: url(../img/footer_line.gif) no-repeat right;
+ }
+ footer small{
+    color:#6c6c6c;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+ }
+ 

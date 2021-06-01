@@ -1,0 +1,25 @@
+
+body{
+    font-family:'Noto Sans KR', '나눔고딕', NanumGothic, '맑은 고딕', MalgunGothic, '돋움', Dotum, sans-serif;
+     font-size:13px; 
+     color:#464646; 
+     line-height:1.7em;}
+
+a{
+    text-decoration:none; 
+    color:#464646;
+}
+.golobal_menu{
+    display: flex;
+    list-style:none;
+   
+}
+ul li{
+    margin-left: 20px;
+}
+/**목록 태그 점 없애기**/
+.top_members{
+    display: flex;
+    list-style:none;
+    float:right;
+}
