@@ -1,123 +1,270 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>EDIYA COFFEE</title>
-    <link href = "css/common.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "css/common.css" rel="stylesheet" >
+    <script src="js/ediya.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <title>EDIYA COFFEE</title>
 </head>
 <body>
-    <hearder class = "top_nav">
-        <div class= "top_align">
-             <ul class = "site">
-                <li class = "on"><a href = "#">브랜드 사이트</a></li>
-                <li><a href="#">기업 사이트</a></li>
-                <li><a href="#">창업안내</a></li>
+    <header class = "top_nav">
+        <div class = "top_align">
+            <ul class = "global_menu">
+                <li class = "on"><a href="#">브랜드 사이트</a></li>
+                <li class><a href="#">기업 사이트</a></li>
+                <li class><a href="#">창업안내</a></li>   
             </ul>
-            <h1><a href="#"><img src="images/common/top_logo.gif" alt="EDIYA COFFEE"></a></h1>
-            <!-- 모바일용 메뉴버튼 -->
-            <button id="btn">
-                 <i class="material-icons">menu</i>
-            </button>
-            <nav>
-                <div class="util">
-                    <ul class="members">
+            <h1 class="top_logo">
+                <a href="/">
+                    <span class="nav_w"><img src="images/common/top_logo.gif" width="202" height="20" alt="EDIYA COFFEE"></span>
+                    <span class="nav_b"><img src="images/common/top_logo_b.gif" width="202" height="20" alt="EDIYA COFFEE"></span>
+                </a>
+            </h1>
+            <h2 class="nav_btn"><a href="#c"><span class="blind">서비스 메뉴</span></a></h2>
+            
+            <div class="gnb">
+                <div class="nav_close">
+                    <a href="#"><img src="images/common/m_nav_close.png" width="20" height="20" alt="메뉴 닫기"></a></div>
+              
+                <div class="gnb_wrap">
+                  <div class="top_util">
+                    <ul class="top_members">
                         <li><a href="#">로그인</a></li>
                         <li><a href="#">회원가입</a></li>
                         <li class="store"><a href="#">매장찾기</a></li>
                         <li class=""><a href="#">고객의 소리</a></li>
-                    </ul>    
-                    <ul class="sns">
-                        <li><a href="https://blog.naver.com/ediya-coffee" target="_blank" class="sp sp-blog"><span class="blind">블로그</span></a></li>
-                        <li><a href="#" target="_blank" class="sp sp-instagram"><span class="blind">인스타그램</span></a></li>
-                        <li><a href="#" target="_blank" class="sp sp-facebook"><span class="blind">페이스북</span></a></li>
-                     </ul>
-                </div>
-        <ul class="gnb">
-            <li>
-               <a href="#"><span>메뉴</span><i class="material-icons"></i></a>
-               <ul class="sub">
-                  <li><a href="#">음료</a></li>
-                  <li><a href="#">베이커리</a></li>
-                  <li><a href="#">이디야 스낵</a></li>
-                  <li><a href="#">MD</a></li>
-                  <li><a href="#">비니스트</a></li>
-                  <li><a href="#">이디야 캡슐커피</a></li>
-                  <li><a href="#">원두</a></li>
-               </ul>
-            </li>
-               <li>
-                <a href="#"><span>이디야멤버스</span><i class="material-icons"></i></a>			
-                <ul class="sub">
-                   <li><a href="#">멤버스 소개</a></li>
-                   <li><a href="#">이디야카드</a></li>
-                   <li><a href="#">선물하기</a></li>
-                   <li><a href="#">이디야오더</a></li>
-                   <li><a href="#">FAQ</a></li>
-                </ul>
-             </li>
-             <li>
-                <a href="#"><span>기프트카드</span><i class="material-icons"></i></a>			
-                <ul class="sub">
-                   <li><a href="#">기프트카드 소개</a></li>
-                   <li><a href="#">잔액 조회</a></li>
-                   <li><a href="#">분실신고/환불신청</a></li>
-                   <li><a href="#">자주하는 질문</a></li>
-                </ul>
-             </li>
-             <li>
-                <a href="#"><span>이디야커피랩</span><i class="material-icons">/i></a>			
-                <ul class="sub">
-                   <li><a href="#">이디야커피랩</a></li>
-                   <li><a href="#">이디야커피랩 메뉴</a></li>
-                </ul>
-             </li>
-             <li>
-                <a href="#"><span>이디야컬쳐랩</span><i class="material-icons"></i></a>			
-                <ul class="sub">
-                   <li><a href="#">뮤직페스타</a></li>
-                   <li><a href="#">프로그램 및 시설 안내</a></li>
-                </ul>
-             </li>
-             <li>
-                <a href="#"><span>이디야소식</span><i class="material-icons"></i></a>			
-                <ul class="sub">
-                   <li><a href="#">공지사항</a></li>
-                   <li><a href="#">이벤트</a></li>
-                   <li><a href="#">홈카페 레시피</a></li>
-                   <li><a href="#">이디야 유튜브</a></li>
-                   <li><a href="#">이디야 블로그</a></li>
-                   <li><a href="#">이디야 인스타그램</a></li>
-                   <li><a href="#">이디야 페이스북</a></li>
+                    </ul>
 
-                </ul>
-             </li>
-          </ul>
-        </nav>
-    </hearder>
-<footer>
-    <ul class="util">
-        <li><a href="#"><em>개인정보처리방침</em></a></li>
-        <li><a href="#">멤버스 이용약관</a></li>
-        <li><a href="#">가맹 안내</a></li>
-        <li><a href="#">대량쿠폰구매</a></li>
-        <li><a href="#">채용안내</a></li>
-        <li><a href="#">고객의 소리</a></li>
-        <li><a href="#">Sitemap</a></li>
-        <li><a href="https://order.ediya.com/store/login" target="_blank">점주의 방</a></li>
-     </ul>
-     <div class="container">
-        <a href="#" class="ccm"><img src="images/common/footer_ccm.png" alt="ccm 국내 커피업계 최초 소비자중심경영 인증"></a>
-        <img src="images/common/bottom_logo.gif" alt="ediya coffee">
-        <address>
-           <span>서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)</span> 
-           <span>TEL : 02-543-6467</span> FAX : 02-543-7191
-           <span>사업자등록번호 : 107-86-16302</span> 
-           <span>통신판매업 신고 : 강남 제 002519호</span> 대표이사 : 문창기
-        </address>
-        <small>ⓒ 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED.</small>
-     </div>
-</footer>
+                    <ul class="top_sns">
+                        <li><a href="https://blog.naver.com/ediya-coffee" target="_blank"><span class="blind">블로그</span></a></li>
+                        <li><a href="https://instagram.com/ediya.coffee" target="_blank"><span class="blind">인스타그램</span></a></li>
+                        <li><a href="https://www.facebook.com/iEDIYA" target="_blank"><span class="blind">페이스북</span></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCK45lxAV_92LqR2DcQCP8Qg?view_as=subscriber" target="_blank"><span class="blind">유튜브</span></a></li>
+                    </ul>
+                    
+                    <div class="language_tab" id="lang_select"><a href="#c" onclick="select_lang()">Korean</a>
+                        <!-- Language 리스트 -->
+                      <ul style="display:none;" class="lang_list">
+                        <li><a href="#c" onclick="ch_lang('')">Korean</a></li>
+                        <li><a href="#c" onclick="ch_lang('eng')">English</a></li>
+                        <li><a href="#c" onclick="ch_lang('chi')">Chinese</a></li>
+                      </ul>
+                    </div>
+                
+                  </div>
+                    
+                  <!-- 서비스 메뉴 영역 -->
+                  <nav>
+                      <ul class="main">
+                      <!-- class="on" 메뉴 활성화 및 Sub 활성화 -->
+                        <li>
+                          <a href="#c" "><span>메뉴</span></a>			
+                          <a href="#" class="main_link"></a>
+                        <ul class="sub">
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">베이커리</a></li>
+                            <li><a href="#">이디야 스낵</a></li>
+                            <li><a href="#">MD</a></li>
+                            <li><a href="#">비니스트</a></li>
+                            <li><a href="#">이디야 캡슐 커피</a></li>
+                            <li><a href="#">원두</a></li>
+                        </ul>
+                      </li>
+                         <li>
+                          <a href="#" data-url="/contents/members_intro.html"><span>이디야멤버스</span></a>			
+                          <a href="#" class="main_link"></a>
+                        <ul class="sub">
+                            <li><a href="#">멤버스 소개</a></li>
+                            <li><a href="#">이디야카드</a></li>
+                            <li><a href="#">선물하기</a></li>
+                            <li><a href="#">이디야오더</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                      </li>
+                            <li>
+                          <a href="#" data-url="/contents/giftcard_intro.html"><span>기프트카드</span></a>			
+                          <a href="#" class="main_link"></a>
+                        <ul class="sub">
+                            <li><a href="#">기프트카드 소개</a></li>
+                            <li><a href="#">잔액 조회</a></li>
+                            <li><a href="#">분실신고/환불신청</a></li>
+                            <li><a href="#">자주하는 질문</a></li>
+                    
+                        </ul>
+                      </li>
+                                  <li>
+                          <a href="#c" data-url="/contents/coffee_lab.html"><span>이디야커피랩</span></a>			
+                          <a href="/contents/coffee_lab.html" class="main_link"></a>
+                        <ul class="sub">
+                            <li><a href="#">이디야커피랩</a></li>
+                            <li><a href="#">이디야커피랩 메뉴</a></li>
+                
+                        </ul>
+                      </li>
+                                  <li>
+                          <a href="#" data-url="/contents/music_festa.html"><span>이디야컬쳐랩</span></a>			
+                          <a href="#" class="main_link"></a>
+                        <ul class="sub">
+                            <li><a href="#">뮤직페스타</a></li>
+                            <li><a href="#">프로그램 및 시설 안내</a></li>
+                           
+                        </ul>
+                      </li>
+                        <li>
+                          <a href="#" data-url="/contents/notice.html?tb_name=notice"><span>이디야 소식</span></a>			
+                          <a href="# class="main_link"></a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">홈카페 레시피</a></li>
+                            <li><a href="#">이디야 유튜브</a></li>
+                            <li><a href="https://blog.naver.com/ediya-coffee">이디야 블로그</a></li>
+                            <li><a href="https://www.instagram.com/ediya.coffee/">이디야 인스타그램</a></li>
+                            <li><a href="https://www.facebook.com/iEDIYA">이디야 페이스북</a></li>
+                        
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!-- //서비스 메뉴 영역 -->
+                  
+                            <ul class="find_store">
+                      <!--<li><a href="/contents/find_store.html"><span>매장 찾기</span></a></li> 
+                      <li><a href="/contents/customer_intro.html">고객의 소리</a></li>
+                      </ul>
+                          
+                  <div class="language_m">
+                      <ul>
+                        <li class="on"><a href="#c" onclick="ch_lang('')">Korean</a></li>
+                      <li class=""><a href="#c" onclick="ch_lang('eng')">English</a></li>
+                      <li class=""><a href="#c" onclick="ch_lang('chi')">Chinese</a></li>
+                    </ul>-->
+                  </div>
+                </div>
+            </div> 
+            
+                <div class="main_visual">
+                    <div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 620px;"><div class="bxSlider" style="width: 9215%; position: relative; transition-duration: 0.5s; transform: translate3d(-3540px, 0px, 0px);"><div class="visual_img bx-clone" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 1180px;">
+                        <a href="#">
+                              <span class="img_box">
+                                
+                                <span class="pc"><img src="files/banner/IMG_1592197905435.jpg" width="1920" height="620" alt=""></span>
+                              </span>
+                            </a>
+                        </div>
+                                    <div class="visual_img" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 1180px;">
+                            <a href="https://walkon.swallaby.com/oG3PDSrw9db" target="_blank">
+                              <span class="img_box">
+                                <span class="mo"><img src="files/banner/IMG_1622513413641.png" width="640" height="640" alt=""></span>
+                                <span class="ta"><img src="files/banner/IMG_1622513413144.png" width="1180" height="620" alt=""></span>
+                                <span class="pc"><img src="files/banner/IMG_1622513413231.png" width="1920" height="620" alt=""></span>
+                              </span>
+                            </a>
+                        </div>
+                                    <div class="visual_img" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 1180px;">
+                            <a href="https://ediya.com/contents/event.html?tb_name=event&amp;bbs_section=view&amp;Ctg=&amp;page=1&amp;idx=152" target="_self">
+                              <span class="img_box">
+                                <span class="mo"><img src="files/banner/IMG_1622421502532.jpg" width="640" height="640" alt=""></span>
+                                <span class="ta"><img src="files/banner/IMG_1622421502883.jpg" width="1180" height="620" alt=""></span>
+                                <span class="pc"><img src="files/banner/IMG_1622421501299.jpg" width="1920" height="620" alt=""></span>
+                              </span>
+                            </a>
+                        </div>
+                                    <div class="visual_img" aria-hidden="false" style="float: left; list-style: none; position: relative; width: 1180px;">
+                            <a href="https://ediya.com/contents/event.html?tb_name=event&amp;bbs_section=view&amp;Ctg=&amp;page=1&amp;idx=150" target="_self">
+                              <span class="img_box">
+                                
+                                <span class="pc"><img src="files/banner/IMG_1621579042577.jpg" width="1410" height="620" alt=""></span>
+                              </span>
+                            </a>
+                        </div>
+                                    <div class="visual_img" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 1180px;">
+                            <a href="https://ediya.com/contents/drink.html?chked_val=71,&amp;skeyword=#c" target="_self">
+                              <span class="img_box">
+                                <span class="mo"><img src="files/banner/IMG_1621209959654.jpg" width="640" height="640" alt=""></span>
+                                <span class="ta"><img src="files/banner/IMG_1621209959519.jpg" width="1180" height="620" alt=""></span>
+                                <span class="pc"><img src="files/banner/IMG_1621209959628.jpg" width="1920" height="620" alt=""></span>
+                              </span>
+                            </a>
+                        </div>
+                                    <div class="visual_img" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 1180px;">
+                            <a href="https://ediya.com/contents/drink.html" target="_self">
+                              <span class="img_box">
+                                <span class="mo"><img src="files/banner/IMG_1618543566651.jpg" width="640" height="640" alt=""></span>
+                                <span class="ta"><img src="files/banner/IMG_1618543566596.jpg" width="1180" height="620" alt=""></span>
+                                <span class="pc"><img src="files/banner/IMG_1618543566896.jpg" width="1920" height="620" alt=""></span>
+                              </span>
+                            </a>
+                        </div>
+                                    <div class="visual_img" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 1180px;">
+                            <a href="#C">
+                              <span class="img_box">
+                                <span class="mo"><img src="files/banner/IMG_1614214782723.jpg" width="640" height="640" alt=""></span>
+                                <span class="ta"><img src="files/banner/IMG_1614214782814.jpg" width="1180" height="620" alt=""></span>
+                                <span class="pc"><img src="files/banner/IMG_1614214782349.jpg" width="1920" height="620" alt=""></span>
+                              </span>
+                            </a>
+                        </div>
+                                    <div class="visual_img" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 1180px;">
+                            <a href="#C">
+                              <span class="img_box">
+                                <span class="mo"><img src="files/banner/IMG_1606454825776.jpg" width="640" height="640" alt=""></span>
+                                <span class="ta"><img src="files/banner/IMG_1606454824186.jpg" width="1180" height="620" alt=""></span>
+                                <span class="pc"><img src="files/banner/IMG_1606454824822.jpg" width="1920" height="620" alt=""></span>
+                              </span>
+                            </a>
+                        </div>
+                            <div class="visual_img" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 1180px;">
+                            <a href="#C">
+                              <span class="img_box">
+                                <span class="mo"><img src="files/banner/IMG_1597725308137.jpg" width="640" height="640" alt=""></span>
+                                <span class="ta"><img src="files/banner/IMG_1597725308298.jpg" width="1180" height="620" alt=""></span>
+                                <span class="pc"><img src="files/banner/IMG_1597725308103.jpg" width="1920" height="620" alt=""></span>
+                              </span>
+                            </a>
+                        </div>
+                                    <div class="visual_img" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 1180px;">
+                            <a href="#c">
+                              <span class="img_box">
+                                <span class="mo"><img src="files/banner/IMG_1592197906661.jpg" width="640" height="640" alt=""></span>
+                                <span class="ta"><img src="files/banner/IMG_1592197906405.jpg" width="1180" height="620" alt=""></span>
+                                <span class="pc"><img src="files/banner/IMG_1592197905435.jpg" width="1920" height="620" alt=""></span>
+                              </span>
+                            </a>
+                        </div>
+                            <div class="visual_img bx-clone" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 1180px;">
+                            <a href="https://walkon.swallaby.com/oG3PDSrw9db" target="_blank">
+                              <span class="img_box">
+                                <span class="mo"><img src="files/banner/IMG_1622513413641.png" width="640" height="640" alt=""></span>
+                                <span class="ta"><img src="files/banner/IMG_1622513413144.png" width="1180" height="620" alt=""></span>
+                                <span class="pc"><img src="files/banner/IMG_1622513413231.png" width="1920" height="620" alt=""></span>
+                              </span>
+                            </a>
+                        </div></div></div><div class="bx-controls bx-has-controls-direction bx-has-pager"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link active">3</a></div><div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link">4</a></div><div class="bx-pager-item"><a href="" data-slide-index="4" class="bx-pager-link">5</a></div><div class="bx-pager-item"><a href="" data-slide-index="5" class="bx-pager-link">6</a></div><div class="bx-pager-item"><a href="" data-slide-index="6" class="bx-pager-link">7</a></div><div class="bx-pager-item"><a href="" data-slide-index="7" class="bx-pager-link">8</a></div><div class="bx-pager-item"><a href="" data-slide-index="8" class="bx-pager-link">9</a></div></div></div></div>
+            </div>
+            <script type="text/javascript">
+
+                
+            $(document).ready(function(){ 
+                $('.bx-wrapper').bxSlider({ 
+                auto: true, 
+                speed: 500, 
+                pause: 4000, 
+                mode:'fade', 
+                autoControls: true, 
+                
+                moveSlides: 1,     // 슬라이드 이동시 개수
+		        minSlides: 1,      // 최소 노출 개수
+		        maxSlides: 1,
+                pager:true, }
+                ); }
+            );
+                </script>
+        </header>
 </body>
 </html>
