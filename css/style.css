@@ -1,25 +1,44 @@
-
-body{
-    font-family:'Noto Sans KR', '나눔고딕', NanumGothic, '맑은 고딕', MalgunGothic, '돋움', Dotum, sans-serif;
-     font-size:13px; 
-     color:#464646; 
-     line-height:1.7em;}
-
-a{
-    text-decoration:none; 
-    color:#464646;
+.main_beanist {
+    padding: 112px 80PX;
+    background: url('../images/main/main_beanist_bg.gif') #fce1a6 center no-repeat;
+    background-size: cover;
 }
-.golobal_menu{
-    display: flex;
-    list-style:none;
-   
+.main_beanist h2 {
+    line-height: 1.1em;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 100;
+    color: #3c3c3c;
 }
-ul li{
-    margin-left: 20px;
+.main_beanist h2 em {
+    display: inline-block;
+    font-weight: 900;
+    color: #90470c;
 }
-/**목록 태그 점 없애기**/
-.top_members{
-    display: flex;
-    list-style:none;
-    float:right;
+em{
+    font-style: normal;
+}
+.main_beanist h2:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    margin: 51px auto 0;
+    background: #3c3c3c;
+}
+.main_beanist h3 {
+        margin: 53px 0 60px;
+        font-size: 26px;
+        line-height: 1.4em;
+        text-align: center;
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight: 100;
+        color: #3c3c3c;
+}
+.main_beanist h3 em {
+    font-weight: 500;
+}
+.main_beanist h3 span.block {
+    display: block;
 }

@@ -90,7 +90,7 @@ header h1.top_logo {
     clear: both;
     margin: 32px 0 0 0;
     z-index: 51;
-    float:left;
+    float:left;   
 }
 header h1.top_logo img {
     width: auto;
@@ -193,6 +193,8 @@ img, fieldset {
     border-top: none;
     border-bottom: none;
     float: left;
+    background-color: #FFFFFF;
+
 }
 .gnb .main li {
     background: none;
@@ -208,6 +210,7 @@ img, fieldset {
     display:block;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
+    
 }
 .gnb .main li a.main_link {
     display: none;
@@ -249,20 +252,22 @@ img, fieldset {
     height: 1px;
     overflow: hidden;
     opacity: 0;
+    
 }
 .gnb nav:hover li .sub, .gnb nav:hover li.on .sub {
     padding-top: 23px;
     margin-top: 0px;
-    height: auto;
+    height: 210px;
     opacity: 1;
+    
 }
-
 .gnb .sub > li {
     clear: both;
     width: 170px;
     height: 30px;
     line-height: 30px;
     margin-left: 0px;
+   
 }
 .gnb .sub > li a:last-child {
     padding: 0 0;
@@ -273,5 +278,5 @@ img, fieldset {
     font-size: 13px;
     color: #848484;
     margin-left: 40px;
+    
 }
-
