@@ -257,7 +257,7 @@ img, fieldset {
 .gnb nav:hover li .sub, .gnb nav:hover li.on .sub {
     padding-top: 23px;
     margin-top: 0px;
-    height: 210px;
+    height: auto;
     opacity: 1;
     
 }
@@ -279,4 +279,61 @@ img, fieldset {
     color: #848484;
     margin-left: 40px;
     
+}
+footer {
+    position: relative;
+    clear: both;
+    width: 100%;
+    background: #262626;
+    text-align: center;
+}
+footer .bottom_util {
+    border-bottom: solid 1px #464646;
+    padding: 16px 0;
+}
+footer .bottom_util li {
+    display: inline-block;
+    margin: 3px 19px;
+}
+footer .bottom_ccm {
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    margin-top: 30px;
+}
+footer .bottom_ccm img {
+    width: 170px;
+    height: auto;
+}
+footer .bottom_logo {
+    margin: 41px 0 24px;
+}
+
+footer .copy_info {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 14px;
+    font-size: 12px;
+    color: #6c6c6c;
+}
+footer .copy {
+    padding-bottom: 35px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #6c6c6c;
+}
+footer .bottom_util li a {
+    color: #818181;
+}
+footer .bottom_util li a em {
+    color: #FFF;
+    font-weight: 400;
+}
+footer .bottom_ccm span {
+    display: block;
+    width: 100%;
+    max-width: 1178px;
+    margin: auto;
 }
